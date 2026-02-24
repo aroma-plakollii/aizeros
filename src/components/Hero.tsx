@@ -23,7 +23,7 @@ const Hero = () => {
             <div className="relative z-10 w-full max-w-[1560px] px-10 lg:px-[120px] flex flex-col">
                 {/* Top: Headline Group */}
                 <div className="flex flex-col items-start mb-4">
-                    <h1 className="text-[101.15px] md:text-[180px] lg:text-[210px] xl:text-[278px] font-semibold text-white leading-[84.41px] md:leading-[150.21px] lg:leading-[175.25px] xl:leading-[232px] tracking-[-0.03em] mix-blend-difference font-clash">
+                    <h1 className="text-[60px] xs:text-[90px] md:text-[180px] lg:text-[210px] xl:text-[278px] font-semibold text-white leading-[84.41px] md:leading-[150.21px] lg:leading-[175.25px] xl:leading-[232px] tracking-[-0.03em] mix-blend-difference font-clash">
                         Aizeros<span className="text-[69.13px] md:text-[102px] lg:text-[122px] xl:text-[190px] align-top mt-10 font-clash">®</span>
                     </h1>
                     <div className="flex items-center gap-4 mt-2">
@@ -33,11 +33,11 @@ const Hero = () => {
                 </div>
 
                 {/* Bottom: Flex Justify Between for Description and Cards */}
-                <div className="flex flex-col md:flex-row justify-between items-center w-full mt-8 md:mt-10 lg:mt-[180px]">
+                <div className="flex flex-col lg:flex-row justify-between items-center w-full mt-8 lg:mt-[180px]">
                     {/* Left: Description & Buttons */}
                     <div className="flex flex-col items-start">
                         <div className="flex gap-4 items-start mb-8">
-                            <p className="text-white tetx-[14px] xl:text-[20px] font-medium leading-[24px] xl:leading-[28px] tracking-[-0.01em] font-inter w-[408px] h-[99px] whitespace-break-spaces">
+                            <p className="text-white text-[14px] sm:text-[20px] font-medium leading-[24px] md:leading-[28px] tracking-[-0.01em] font-inter w-full xs:w-[400px] sm:w-[450px] lg:w-[408px] h-[99px] whitespace-break-spaces">
                                 /                We help startups and businesses
                                 grow faster through AI-driven UI/UX
                                 design, branding, development, and digital
@@ -45,10 +45,10 @@ const Hero = () => {
                             </p>
                         </div>
 
-                        <div className="flex flex-wrap gap-4 items-center mt-20">
+                        <div className="flex flex-wrap gap-4 items-center mt-1 sm:mt-4 lg:mt-20 w-full xs:w-auto">
                             <Link
                                 href="/portfolio"
-                                className="flex items-center gap-5 px-[20px] py-[16px] border border-white/20 rounded-full text-white hover:bg-white/5 transition-all group"
+                                className="flex items-center justify-between gap-5 px-[20px] py-[16px] border border-white/20 rounded-full text-white hover:bg-white/5 transition-all group w-full xs:w-auto"
                             >
                                 <span className="font-medium text-[14px] md:text-[16px]">View Our Works</span>
                                 <div className="w-2 h-2 bg-white rounded-full group-hover:scale-125 transition-transform"></div>
@@ -56,7 +56,7 @@ const Hero = () => {
 
                             <Link
                                 href="/contact"
-                                className="flex items-center gap-5 pl-[20px] pr-[6px] py-[6px] bg-white rounded-full text-black hover:bg-white/90 transition-all group lg:h-[56px]"
+                                className="flex items-center justify-between gap-5 pl-[20px] pr-[6px] py-[6px] bg-white rounded-full text-black hover:bg-white/90 transition-all group lg:h-[56px] w-full xs:w-auto"
                             >
                                 <span className="font-semibold text-[14px] md:text-[16px] font-inter">Connect Us</span>
                                 <div className="w-[45px] h-[45px] rounded-full bg-black flex items-center justify-center group-hover:translate-x-1 transition-transform">
@@ -69,12 +69,12 @@ const Hero = () => {
                     </div>
 
                     {/* Right: Cards & Pagination */}
-                    <div className="flex flex-col items-center lg:items-end gap-12 max-w-[654px] w-full mt-16 md:mt-24 lg:mt-0">
+                    <div className="flex flex-col items-center lg:items-end max-w-[540px] xl:max-w-[654px] w-full mt-16 lg:mt-0">
                         <Swiper
-                            slidesPerView={1.1}
+                            slidesPerView={1}
                             spaceBetween={12}
                             breakpoints={{
-                                1024: {
+                                640: {
                                     slidesPerView: 2,
                                     spaceBetween: 12
                                 }
@@ -94,7 +94,7 @@ const Hero = () => {
                                     className={`w-full max-w-[321px] h-[201.77px] bg-[#438356]/80 rounded-[12.23px] overflow-hidden relative backdrop-blur-[44px] transition-all duration-300 mx-auto lg:mx-0 ${selectedIndex === 0 ? 'ring-1 ring-white/20' : ''}`}
                                     style={{ boxShadow: '0px 26px 15px 0px #00000026' }}
                                 >
-                                    <div className="absolute top-[15px] left-[23px] w-[275px] h-[193px]">
+                                    <div className="absolute top-[15px] left-[23px] w-[275px] sm:w-[220px] xl:w-[275px] h-[193px]">
                                         <img
                                             src="/images/Frame 31.png"
                                             alt="Project Preview"
@@ -114,7 +114,7 @@ const Hero = () => {
                                     className={`w-full max-w-[321px] h-[201.77px] bg-gradient-to-br from-[#2E6B8D]/80 via-[#1E3A5F]/80 to-[#121A2B]/80 rounded-[12.23px] overflow-hidden relative backdrop-blur-[44px] transition-all duration-300 mx-auto lg:mx-0 ${selectedIndex === 1 ? 'ring-1 ring-white/20' : ''}`}
                                     style={{ boxShadow: '0px 26px 15px 0px #00000026' }}
                                 >
-                                    <div className="absolute top-[83.9px] left-[58px] w-[206px] h-[32.3px]">
+                                    <div className="absolute top-[83.9px] left-[58px] sm:left-[26px] xl:left-[58px] w-[206px] h-[32.3px]">
                                         <Logo />
                                     </div>
                                 </div>
@@ -127,7 +127,7 @@ const Hero = () => {
                                     className={`w-full max-w-[321px] h-[201.77px] bg-gradient-to-br from-[#1E3A5F]/80 via-[#121A2B]/80 to-black/80 rounded-[12.23px] overflow-hidden relative backdrop-blur-[44px] transition-all duration-300 mx-auto lg:mx-0 ${selectedIndex === 2 ? 'ring-1 ring-white/20' : ''}`}
                                     style={{ boxShadow: '0px 26px 15px 0px #00000026' }}
                                 >
-                                    <div className="absolute top-[83.9px] left-[58px] w-[206px] h-[32.3px]">
+                                    <div className="absolute top-[83.9px] left-[26px] xl:left-[58px] w-[206px] h-[32.3px]">
                                         <Logo />
                                     </div>
                                 </div>
@@ -135,7 +135,7 @@ const Hero = () => {
                         </Swiper>
 
                         {/* Pagination */}
-                        <div className="flex items-center gap-3 w-full px-2">
+                        <div className="flex items-center gap-3 w-full px-2 mt-12">
                             <span className="text-white text-[14px] font-medium font-inter">0{selectedIndex + 1}</span>
                             <div className="flex-1 h-[1px] bg-white/10 relative">
                                 <div
@@ -145,13 +145,23 @@ const Hero = () => {
                             </div>
                             <span className="text-[#FFFFFF4D] text-[14px] font-medium font-inter">03</span>
                         </div>
+
+                        {/* Mobile Scroll Down Indicator */}
+                        <div className="flex md:hidden flex-col items-center gap-2 mt-3 xs:mt-14">
+                            <span className="text-[#FFFFFF99] font-normal text-[14px] leading-[18px] tracking-normal font-inter">
+                                Scroll down
+                            </span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="animate-bounce">
+                                <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="#FFFFFF99" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
 
             {/* Scroll Down Indicator */}
             <div className="absolute right-10 lg:right-[120px] top-[150px] lg:top-[280px] hidden md:flex flex-col items-center gap-[15px] z-10">
-                <span className="text-[#FFFFFF99] font-normal text-[14px] leading-[18px] font-inter [writing-mode:vertical-lr] rotate-180">
+                <span className="text-[#FFFFFF99] font-normal text-[14px] leading-[18px] tracking-normal font-inter [writing-mode:vertical-lr] rotate-180">
                     Scroll down
                 </span>
                 <div className="w-[0.5px] h-[98.94px] bg-[#FFFFFF99]"></div>

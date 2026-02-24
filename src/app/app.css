@@ -12,6 +12,7 @@
   --font-mono: var(--font-geist-mono);
   --font-inter: var(--font-inter);
   --font-clash: var(--font-clash);
+  --breakpoint-xs: 440px;
 }
 
 @media (prefers-color-scheme: dark) {

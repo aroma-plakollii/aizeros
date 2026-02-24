@@ -7,7 +7,7 @@ const ContactButton = () => {
         >
             <span>Contact us</span>
             {/* Icon */}
-            <div className="flex items-center justify-center w-[18px] h-[16px]">
+            <div className="flex items-center justify-center w-[18px] h-[18px]">
                 {/* 
                    The user specified icon size 18x16. 
                    The previous SVG was 14x14. Use w-full h-full to fill the 18x16 container if desired,

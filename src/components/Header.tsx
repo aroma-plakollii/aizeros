@@ -21,7 +21,7 @@ const Header = () => {
                 Mobile Container: px-[20px], mt-[23px]
             */}
             <div
-                className="flex items-center justify-between w-full px-10 lg:px-[120px] max-w-[1560px]"
+                className="flex items-center justify-between w-full px-10 lg:px-[60px] max-w-[1560px]"
             >
                 {/* 
                    Logo Wrapper 

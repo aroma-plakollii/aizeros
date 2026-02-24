@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const Stats = () => {
     return (
-        <section className="bg-[#010916] py-16 lg:py-24 px-6 sm:px-10 lg:px-[120px] overflow-hidden">
+        <section className="bg-[#010916] py-16 lg:py-24 px-6 sm:px-10 lg:px-[60px] overflow-hidden">
             <div className="max-w-[1560px] mx-auto flex flex-col">
 
                 {/* Section Header Bar */}

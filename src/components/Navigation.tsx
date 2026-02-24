@@ -18,9 +18,9 @@ const Navigation = () => {
                     key={item.name}
                     href={item.href}
                     className={`
-                        font-medium transition-colors whitespace-nowrap flex items-center justify-center
+                        font-medium text-[18px] transition-colors whitespace-nowrap flex items-center justify-center
                         ${item.active
-                            ? 'bg-white text-black rounded-[100px] w-[100px] h-[53px]'
+                            ? 'bg-white font-semibold text-black rounded-[100px] w-[100px] h-[53px]'
                             : 'text-white hover:text-gray-300'
                         }
                     `}

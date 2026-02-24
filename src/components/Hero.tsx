@@ -20,7 +20,7 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-black/20"></div>
             </div>
 
-            <div className="relative z-10 w-full max-w-[1560px] px-10 lg:px-[120px] flex flex-col">
+            <div className="relative z-10 w-full max-w-[1560px] px-10 lg:px-[60px] flex flex-col">
                 {/* Top: Headline Group */}
                 <div className="flex flex-col items-start mb-4">
                     <h1 className="text-[60px] xs:text-[90px] md:text-[180px] lg:text-[210px] xl:text-[278px] font-semibold text-white leading-[84.41px] md:leading-[150.21px] lg:leading-[175.25px] xl:leading-[232px] tracking-[-0.03em] mix-blend-difference font-clash">
@@ -160,7 +160,7 @@ const Hero = () => {
             </div>
 
             {/* Scroll Down Indicator */}
-            <div className="absolute right-10 lg:right-[120px] top-[150px] lg:top-[280px] hidden md:flex flex-col items-center gap-[15px] z-10">
+            <div className="absolute right-10 lg:right-[60px] top-[150px] lg:top-[280px] hidden md:flex flex-col items-center gap-[15px] z-10">
                 <span className="text-[#FFFFFF99] font-normal text-[14px] leading-[18px] tracking-normal font-inter [writing-mode:vertical-lr] rotate-180">
                     Scroll down
                 </span>

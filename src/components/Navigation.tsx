@@ -20,7 +20,7 @@ const Navigation = () => {
                     className={`
                         font-medium text-[18px] transition-colors whitespace-nowrap flex items-center justify-center
                         ${item.active
-                            ? 'bg-white font-semibold text-black rounded-[100px] w-[100px] h-[53px]'
+                            ? 'bg-white font-semibold text-black rounded-[100px] w-[100px] h-[53px] py-[20px] px-[24px]'
                             : 'text-white hover:text-gray-300'
                         }
                     `}

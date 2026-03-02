@@ -38,7 +38,7 @@ const Hero = () => {
                     <div className="flex flex-col items-start">
                         <div className="flex gap-4 items-start mb-8">
                             <p className="text-white text-[14px] sm:text-[20px] font-medium leading-[24px] md:leading-[28px] tracking-[-0.01em] font-inter w-full xs:w-[400px] sm:w-[450px] lg:w-[408px] h-[99px] whitespace-break-spaces">
-                                /                We help startups and businesses
+                                /             We help startups and businesses
                                 grow faster through AI-driven UI/UX
                                 design, branding, development, and digital
                                 marketing — all under one roof.
@@ -48,18 +48,18 @@ const Hero = () => {
                         <div className="flex flex-wrap gap-4 items-center mt-1 sm:mt-4 lg:mt-20 w-full xs:w-auto">
                             <Link
                                 href="/portfolio"
-                                className="flex items-center justify-between gap-5 px-[20px] py-[16px] border border-white/20 rounded-full text-white hover:bg-white/5 transition-all group w-full xs:w-auto"
+                                className="flex items-center justify-between gap-5 w-[183] h-[48px] px-[20px] py-[16px] border border-white/20 rounded-full text-white hover:bg-white/5 transition-all group w-full xs:w-auto"
                             >
                                 <span className="font-medium text-[14px] md:text-[16px]">View Our Works</span>
-                                <div className="w-2 h-2 bg-white rounded-full group-hover:scale-125 transition-transform"></div>
+                                <div className="w-[6px] h-[6px] bg-white rounded-full group-hover:scale-125 transition-transform"></div>
                             </Link>
 
                             <Link
                                 href="/contact"
-                                className="flex items-center justify-between gap-5 pl-[20px] pr-[6px] py-[6px] bg-white rounded-full text-black hover:bg-white/90 transition-all group lg:h-[56px] w-full xs:w-auto"
+                                className="flex items-center justify-between gap-5 pl-[20px] pr-[6px] py-[6px] bg-white rounded-full text-black hover:bg-white/90 transition-all group lg:h-[48px] w-[168px] xs:w-auto"
                             >
                                 <span className="font-semibold text-[14px] md:text-[16px] font-inter">Connect Us</span>
-                                <div className="w-[45px] h-[45px] rounded-full bg-black flex items-center justify-center group-hover:translate-x-1 transition-transform">
+                                <div className="w-[40px] h-[40px] rounded-full bg-black flex items-center justify-center group-hover:translate-x-1 transition-transform">
                                     <svg width="21" height="21" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
@@ -91,7 +91,7 @@ const Hero = () => {
                                         swiper?.slideTo(0);
                                         setSelectedIndex(0);
                                     }}
-                                    className={`w-full max-w-[321px] h-[201.77px] bg-[#438356]/80 rounded-[12.23px] overflow-hidden relative backdrop-blur-[44px] transition-all duration-300 mx-auto lg:mx-0 ${selectedIndex === 0 ? 'ring-1 ring-white/20' : ''}`}
+                                    className={`w-full max-w-[321px] h-[200px] bg-[#438356]/80 rounded-[24px] overflow-hidden relative backdrop-blur-[44px] transition-all duration-300 mx-auto lg:mx-0 ${selectedIndex === 0 ? 'ring-1 ring-white/20' : ''}`}
                                     style={{ boxShadow: '0px 26px 15px 0px #00000026' }}
                                 >
                                     <div className="absolute top-[15px] left-[23px] w-[275px] sm:w-[220px] xl:w-[275px] h-[193px]">
@@ -111,7 +111,7 @@ const Hero = () => {
                                         swiper?.slideTo(1);
                                         setSelectedIndex(1);
                                     }}
-                                    className={`w-full max-w-[321px] h-[201.77px] bg-gradient-to-br from-[#2E6B8D]/80 via-[#1E3A5F]/80 to-[#121A2B]/80 rounded-[12.23px] overflow-hidden relative backdrop-blur-[44px] transition-all duration-300 mx-auto lg:mx-0 ${selectedIndex === 1 ? 'ring-1 ring-white/20' : ''}`}
+                                    className={`w-full max-w-[321px] h-[200px] bg-gradient-to-br from-[#2E6B8D]/80 via-[#1E3A5F]/80 to-[#121A2B]/80 rounded-[24px] overflow-hidden relative backdrop-blur-[44px] transition-all duration-300 mx-auto lg:mx-0 ${selectedIndex === 1 ? 'ring-1 ring-white/20' : ''}`}
                                     style={{ boxShadow: '0px 26px 15px 0px #00000026' }}
                                 >
                                     <div className="absolute top-[83.9px] left-[58px] sm:left-[26px] xl:left-[58px] w-[206px] h-[32.3px]">
@@ -124,7 +124,7 @@ const Hero = () => {
                             <SwiperSlide>
                                 <div
                                     onClick={() => setSelectedIndex(2)}
-                                    className={`w-full max-w-[321px] h-[201.77px] bg-gradient-to-br from-[#1E3A5F]/80 via-[#121A2B]/80 to-black/80 rounded-[12.23px] overflow-hidden relative backdrop-blur-[44px] transition-all duration-300 mx-auto lg:mx-0 ${selectedIndex === 2 ? 'ring-1 ring-white/20' : ''}`}
+                                    className={`w-full max-w-[321px] h-[200px] bg-gradient-to-br from-[#1E3A5F]/80 via-[#121A2B]/80 to-black/80 rounded-[24px] overflow-hidden relative backdrop-blur-[44px] transition-all duration-300 mx-auto lg:mx-0 ${selectedIndex === 2 ? 'ring-1 ring-white/20' : ''}`}
                                     style={{ boxShadow: '0px 26px 15px 0px #00000026' }}
                                 >
                                     <div className="absolute top-[83.9px] left-[26px] xl:left-[58px] w-[206px] h-[32.3px]">
@@ -135,7 +135,7 @@ const Hero = () => {
                         </Swiper>
 
                         {/* Pagination */}
-                        <div className="flex items-center gap-3 w-full px-2 mt-12">
+                        <div className="flex items-center gap-3 w-full px-2 mt-5">
                             <span className="text-white text-[14px] font-medium font-inter">0{selectedIndex + 1}</span>
                             <div className="flex-1 h-[1px] bg-white/10 relative">
                                 <div
@@ -160,7 +160,7 @@ const Hero = () => {
             </div>
 
             {/* Scroll Down Indicator */}
-            <div className="absolute right-10 lg:right-[60px] top-[150px] lg:top-[280px] hidden md:flex flex-col items-center gap-[15px] z-10">
+            <div className="absolute right-10 lg:right-[60px] top-[150px] lg:top-[229px] hidden md:flex flex-col items-center gap-[15px] z-10">
                 <span className="text-[#FFFFFF99] font-normal text-[14px] leading-[18px] tracking-normal font-inter [writing-mode:vertical-lr] rotate-180">
                     Scroll down
                 </span>

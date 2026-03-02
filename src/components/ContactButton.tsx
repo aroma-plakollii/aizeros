@@ -3,7 +3,7 @@ import React from 'react';
 const ContactButton = () => {
     return (
         <button
-            className="flex items-center justify-center bg-transparent text-white border border-white/20 rounded-[1000px] font-medium transition-colors hover:bg-white/10 h-[56px] gap-5 py-1.5 px-7"
+            className="flex items-center justify-center bg-transparent text-white border border-white/20 rounded-[1000px] font-medium transition-colors hover:bg-white/10 h-[56px] w-[175px] gap-5 py-[6px] px-[28px]"
         >
             <span>Contact us</span>
             {/* Icon */}

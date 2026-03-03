@@ -192,15 +192,25 @@ const Stats = () => {
                   Book a call
                 </button>
               </div>
-              <div className="mt-8 bg-white rounded-[24px] py-[32px] px-[28px] w-[332px] h-[370px] flex flex-col shrink-0">
-                <div className="flex flex-col justify-between h-full">
-                  <div className="flex justify-between">
-                    <p>Ezendo Fact</p>
-                    <p className="text-[16px]">01/04</p>
+              <div className="mt-8 relative bg-white rounded-[24px] w-[332px] h-[370px] px-[16.5px] py-[17.5px] flex flex-col shrink-0 overflow-hidden text-white group opacity-100 rotate-0">
+                {/* Background Image Layer */}
+                <img
+                  src="/images/statsbg.png"
+                  alt="Ezendo Fact"
+                  className="w-[299px] h-[335px] transition-transform duration-500 group-hover:scale-110 rounded-[24px] opacity-100 rotate-0"
+                />
+
+                <div className="absolute flex flex-col justify-between z-10 w-[257px] h-[290px] top-[38px] right-[40px]" >
+                  <div className="flex justify-between items-center text-[18px] font-archivo">
+                    <div className="flex flex-col">
+                      <p className="font-semibold">Ezendo Fact</p>
+                      <div className="w-12 h-[2px] bg-white mt-1"></div>
+                    </div>
+                    <p className="opacity-80">01/04</p>
                   </div>
                   <div>
-                    <p className="font-clash text-[80px]">80+</p>
-                    <p className="text-[14px]">
+                    <p className="font-archivo text-[84px] font-semibold leading-none mb-2 tracking-tight">80+</p>
+                    <p className="text-[16px] font-archivo opacity-90 leading-snug">
                       Projects successfully launched worldwide
                     </p>
                   </div>
@@ -208,23 +218,23 @@ const Stats = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-2 h-[158px] rounded-[20px] bg-[#292932]">
-            <div>
-              <p className="text-[64px]">40+</p>
-              <p className="text-[18px]">Projects Delivered</p>
-            </div>
-            <div>
-              <p>100+</p>
-              <p>Happy Clients</p>
-            </div>
-            <div>
-              <p>4+</p>
-              <p>Years of Experience</p>
-            </div>
-            <div>
-              <p>15</p>
-              <p>Industries Served</p>
-            </div>
+          <div className="col-span-2 h-[158px] rounded-[20px] bg-[#292932] flex items-center justify-between px-[53px] py-[30px] mt-4">
+            {[
+              { number: "40+", label: "Projects Delivered" },
+              { number: "100+", label: "Happy Clients" },
+              { number: "4+", label: "Years of Experience" },
+              { number: "15", label: "Industries Served" },
+            ].map((stat, index, array) => (
+              <React.Fragment key={index}>
+                <div className="text-center">
+                  <p className="text-white text-[64px] font-archivo font-semibold leading-[46px] capitalize">{stat.number}</p>
+                  <p className="text-white/60 text-[18px] font-archivo font-normal leading-[28px] mt-4">{stat.label}</p>
+                </div>
+                {index < array.length - 1 && (
+                  <div className="w-[1px] h-[98px] bg-white opacity-[0.3]"></div>
+                )}
+              </React.Fragment>
+            ))}
           </div>
         </div>
       </div>
